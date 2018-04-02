@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  {% if not craft.config.devMode %}
+    <link rel="stylesheet" href="{{ rev('app.css') }}">
+  {% endif %}
+
+</head>
+<body>
+  <div id="app">
+    <hello-world />
+  </div>
+
+  {% if craft.config.devMode %}
+    <script src="http://localhost:8080/app.js"></script>
+  {% else %}
+    <script src="{{ rev('manifest.js') }}"></script>
+    <script src="{{ rev('vendor.js') }}"></script>
+    <script src="{{ rev('app.js') }}"></script>
+  {% endif %}
+
+</body>
+</html>
