@@ -26,10 +26,15 @@ You can (and should) fork this repo to create your own boilerplate
 ## Build Setup
 
 ``` bash
+# create & install project
+composer create-project chasegiunta/craft-vue PATH -s RC
+
+# run Craft's setup command
+
 # install dependencies
 npm install # yarn
 
-# serve with hot reload at localhost:8080
+# run dev server (default runs on localhost:8080)
 npm run dev # yarn dev
 
 # build for production with minification
