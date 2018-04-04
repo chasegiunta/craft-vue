@@ -41,6 +41,8 @@ npm run dev # yarn dev
 npm run build # yarn build
 ```
 
+Only _your assets_ will be served from `localhost:8080` and referenced in the base template. You'll still load your site locally under your normal development domain (domain.test, etc.)
+
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
