@@ -32,7 +32,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     compress: true,
     host: HOST || config.dev.host,
     port: PORT || config.dev.port,
-    open: config.dev.autoOpenBrowser,
     overlay: config.dev.errorOverlay
       ? { warnings: false, errors: true }
       : false,
@@ -56,6 +55,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         server.sockWrite(server.sockets, "content-changed");
       });
     },
+    after(app){
+      if (config.dev.autoOpenBrowser) {
+        const opn = require('opn');
+        opn(config.dev.autoOpenUrl);
+      }
+    }
   },
   plugins: [
     new webpack.DefinePlugin({
