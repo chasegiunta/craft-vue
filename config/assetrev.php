@@ -24,13 +24,13 @@ return [
     // such as Gulp or Grunt. The path will be relative to your Craft base
     // directory, unless you supply an absolute path.
 
-    'manifestPath' => 'manifest.json',
+    'manifestPath' => '@webroot/manifest.json',
 
     // The path where your built asset files can be found. Required for query
     // string creation. Again, this is relative to your Craft base directory,
     // unless you supply an absolute path.
 
-    'assetsBasePath' => './',
+    'assetsBasePath' => '@webroot/',
 
     // A prefix to apply to your asset filenames when they are output. You would
     // likely want to set this if the paths in your manifest file are going to
