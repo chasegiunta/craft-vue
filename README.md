@@ -21,7 +21,9 @@ All the power of a Vue's webpack template & single file components tailored for 
 
 ### Fork It And Make Your Own
 
-You can (and should) fork this repo to create your own boilerplate
+You can (and should) fork this repo to create your own boilerplate.
+
+I've also created a fork of this boilerplate that integrates [TailwindCSS & Purgecss here](https://github.com/chasegiunta/craft-vue-tailwind)
 
 ## Build Setup
 
