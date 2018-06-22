@@ -1,7 +1,7 @@
 {
   "name": "chasegiunta/craft-vue",
   "description": "Craft CMS",
-  "version": "1.01",
+  "version": "1.0.2",
   "minimum-stability": "RC",
   "keywords": [
     "craft",
