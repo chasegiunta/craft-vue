@@ -25,13 +25,17 @@ You can (and should) fork this repo to create your own boilerplate.
 
 I've also created a fork of this boilerplate that integrates [TailwindCSS & Purgecss here](https://github.com/chasegiunta/craft-vue-tailwind)
 
-## Build Setup
+## Setup
 
 ``` bash
 # create & install project
 composer create-project chasegiunta/craft-vue PATH -s RC
 
 # run Craft's setup command
+./craft setup
+
+# install the Asset Rev plugin
+./craft install/plugin assetrev
 
 # install dependencies
 npm install # yarn
@@ -43,7 +47,7 @@ npm run dev # yarn dev
 npm run build # yarn build
 ```
 
-Only _your assets_ will be served from `localhost:8080` and referenced in the base template. You'll still load your site locally under your normal development domain (domain.test, etc.)
+During development, only _your assets_ will be served from `localhost:8080` and referenced in the base template. You'll still load your site locally under your normal development domain (domain.test, etc.). This will also cause a brief unstyled flash on page loads due to assets loading from javascript for development. This flash isn't present after build, on production.
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
