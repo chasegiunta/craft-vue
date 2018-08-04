@@ -12,6 +12,9 @@ module.exports = {
   baseUrl: '/',
   outputDir: 'web/dist',
   filenameHashing: process.env.NODE_ENV === 'production' ? true : false,
+  css: {
+    sourceMap: true
+  },
   devServer: {
     // Uncommenting these will lose the 'Network' app access
     // host: config.host,
@@ -21,7 +24,7 @@ module.exports = {
       const sane = require('sane')
       var watcher = sane(path.join(__dirname, 'templates'), {glob: ['**/*']});
       watcher.on('change', function (filepath, root, stat) { 
-        console.log('file changed:', filepath);
+        console.log('  File saved:', filepath);
         server.sockWrite(server.sockets, "content-changed");
       });
     }
