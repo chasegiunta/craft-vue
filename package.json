@@ -10,7 +10,7 @@
     "vue": "^2.5.16"
   },
   "devDependencies": {
-    "@vue/cli-service": "^3.0.0-rc.6",
+    "@vue/cli-service": "^3.0.0-rc.10",
     "sane": "^2.5.2",
     "vue-template-compiler": "^2.5.16",
     "webpack-manifest-plugin": "^2.0.3"
