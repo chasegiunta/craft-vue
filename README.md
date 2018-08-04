@@ -73,5 +73,5 @@ Read more about this at https://cli.vuejs.org/guide/css.html#pre-processors
 ## Babel Compiling
 This boilerplate uses babel-preset-env for configuring babel. [You can read more about it here.](https://cli.vuejs.org/config/#babel)
 
-# Linting
+## Linting
 You can enable linting by adding the `@vue/cli-plugin-eslint` plugin through the GUI `vue ui`.
