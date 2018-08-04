@@ -1,22 +1,21 @@
 {
   "name": "chasegiunta/craft-vue",
-  "description": "Craft CMS",
+  "description": "Craft CMS + Vue.js Boilerplate",
   "keywords": [
     "craft",
     "cms",
     "craftcms",
-    "project"
+    "project",
+    "vue",
+    "vue.js",
+    "vue js"
   ],
   "license": "MIT",
   "homepage": "https://craftcms.com/",
   "type": "project",
   "support": {
-    "email": "support@craftcms.com",
-    "issues": "https://github.com/craftcms/cms/issues",
-    "forum": "https://craftcms.stackexchange.com/",
-    "source": "https://github.com/craftcms/cms",
-    "docs": "https://craftcms.com/docs",
-    "rss": "https://craftcms.com/changelog.rss"
+    "email": "me@chasegiunta.com",
+    "issues": "https://github.com/chasegiunta/craft-vue/issues"
   },
   "require": {
     "craftcms/cms": "^3.0.0",
