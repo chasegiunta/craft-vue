@@ -9,7 +9,8 @@ config = {
 
 module.exports = {
   runtimeCompiler: true,
-  baseUrl: process.env.NODE_ENV === 'production' ? '/' : `${config.https ? 'https' : 'http'}://${config.host}:${config.port}`,
+  // baseUrl: process.env.NODE_ENV === 'production' ? '/' : `${config.https ? 'https' : 'http'}://${config.host}:${config.port}`,
+  baseUrl: '/',
   outputDir: 'web/dist',
   devServer: {
     // Uncommenting these will lose the 'Network' app access
