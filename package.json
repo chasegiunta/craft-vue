@@ -5,6 +5,7 @@
   "minimum-stability": "RC",
   "scripts": {
     "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
@@ -12,7 +13,7 @@
   },
   "devDependencies": {
     "@vue/cli-service": "^3.0.0-rc.10",
-    "sane": "^2.5.2",
+    "sane": "^3.0.0",
     "vue-template-compiler": "^2.5.16",
     "webpack-manifest-plugin": "^2.0.3"
   },
