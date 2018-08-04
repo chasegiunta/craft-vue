@@ -2,6 +2,7 @@
   "name": "craft-vue",
   "version": "2.0.0",
   "private": true,
+  "minimum-stability": "RC",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
