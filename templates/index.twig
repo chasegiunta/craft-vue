@@ -13,7 +13,14 @@
 
 <body>
   <div id="app">
-    <hello-world />
+    {% set info = {
+      craftVersion: craft.app.getVersion(),
+      environment: getenv('ENVIRONMENT')
+    } %}
+    
+    <hello-world :info="{{ info|json_encode }}">
+      {{ getenv('DB_DATABASE') }}
+    </hello-world>
   </div>
 
   {% if getenv('ENVIRONMENT') == 'dev' or getenv('ENVIRONMENT') == 'local' %}
