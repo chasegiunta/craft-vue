@@ -4,7 +4,8 @@ const ManifestPlugin = require('webpack-manifest-plugin')
 config = {
   https: false,
   host: 'localhost',
-  port: 8080
+  port: 8080,
+  watchDir: 'templates' 
 }
 
 module.exports = {
@@ -22,7 +23,7 @@ module.exports = {
     https: config.https,
     before(app, server) {
       const sane = require('sane')
-      var watcher = sane(path.join(__dirname, 'templates'), {glob: ['**/*']});
+      var watcher = sane(path.join(__dirname, config.watchDir), {glob: ['**/*']});
       watcher.on('change', function (filepath, root, stat) { 
         console.log('  File saved:', filepath);
         server.sockWrite(server.sockets, "content-changed");
