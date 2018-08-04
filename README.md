@@ -53,7 +53,7 @@ Once up and running, the fun part comes in using Vue CLI's GUI to customize your
 
 You can also run your `dev` & `build` tasks from the GUI to get valuable build stats & runtime analytics.
 
-*NOTE* During development, _only your assets_ will be served from `localhost:8080` and referenced in the base template. You'll still load your site locally under your normal development domain (mysite.test, etc.). This will also cause a brief unstyled flash on page loads due to JS/CSS assets loading from javascript for development. *This flash isn't present after build, on production*.
+**NOTE:** During development, _only your assets_ will be served from `localhost:8080` and referenced in the base template. You'll still load your site locally under your normal development domain (mysite.test, etc.). This will also cause a brief unstyled flash on page loads due to JS/CSS assets loading from javascript for development. **This flash isn't present after build, on production**.
 
 For a detailed explanation on how things work, check out the [Vue CLI docs](https://cli.vuejs.org/).
 
