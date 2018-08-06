@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ siteName }}</title>
 
-  {% if not getenv('ENVIRONMENT') == 'dev' and not getenv('ENVIRONMENT') == 'local' %}
+  {% if getenv('ENVIRONMENT') != 'dev' and getenv('ENVIRONMENT') != 'local' %}
     <link rel="stylesheet" href="{{ rev('app.css') }}">
   {% endif %}
 </head>
