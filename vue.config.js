@@ -10,7 +10,9 @@ config = {
 
 module.exports = {
   runtimeCompiler: true,
-  baseUrl: '/',
+  baseUrl: process.env.NODE_ENV === 'production'
+  ? '/'
+  : `${config.https ? 'https' : 'http'}://${config.host}:${config.port}/`,
   outputDir: 'web/dist',
   filenameHashing: process.env.NODE_ENV === 'production' ? true : false,
   css: {
@@ -21,6 +23,7 @@ module.exports = {
     // host: config.host,
     // port: config.port,
     https: config.https,
+    headers: { 'Access-Control-Allow-Origin': '*' },
     before(app, server) {
       const sane = require('sane')
       var watcher = sane(path.join(__dirname, config.watchDir), {glob: ['**/*']});
