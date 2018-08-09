@@ -23,6 +23,7 @@ module.exports = {
     // host: config.host,
     // port: config.port,
     https: config.https,
+    clientLogLevel: 'info',
     headers: { 'Access-Control-Allow-Origin': '*' },
     before(app, server) {
       const sane = require('sane')
