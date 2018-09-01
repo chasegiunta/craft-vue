@@ -1,6 +1,6 @@
 # craft-vue
 
-All the power of a Vue CLI's scaffolding & single file components tailored for a Craft CMS project.
+All the power of Vue CLI's scaffolding & single file components tailored for a Craft CMS project.
 
 ## What's Included
 
