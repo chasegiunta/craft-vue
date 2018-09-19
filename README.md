@@ -57,6 +57,12 @@ You can also run your `dev` & `build` tasks from the GUI to get valuable build s
 
 **NOTE:** During development, _only your assets_ will be served from `localhost:8080` and referenced in the base template. You'll still load your site locally under your normal development domain (mysite.test, etc.). This will also cause a brief unstyled flash on page loads due to JS/CSS assets loading from javascript for development. **This flash isn't present after build, on production**.
 
+Vue's CLI may incorrectly output the wrong URL for the dev server:
+```bash
+App running at: http://localhost:8080/http://localhost:8080/
+# Ignore this bug. Your server will be running at http://localhost:8080
+```
+
 After running `npm run build`, the easiest way to test your build files locally is to comment the environment variable in your `.env` file, and refresh the page. This will serve your assets from the build directory, rather than webpack's dev server.
 
 For a detailed explanation on how things work, check out the [Vue CLI docs](https://cli.vuejs.org/).
@@ -71,6 +77,9 @@ npm install sass-loader node-sass --save-dev
 Note you also need to install node-sass because sass-loader depends on it as a peer dependency.
 
 Read more about this at https://cli.vuejs.org/guide/css.html#pre-processors
+
+## Automatic Component Registration
+Any vue components placed within `src/components` will be registered with Vue automatically. **This requires their filenames to be in PascalCase**, eg. MyVueComponent.vue
 
 ## Babel Compiling
 This boilerplate uses babel-preset-env for configuring babel. [You can read more about it here.](https://cli.vuejs.org/config/#babel)
