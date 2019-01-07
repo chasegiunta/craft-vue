@@ -25,6 +25,7 @@ module.exports = {
     https: config.https,
     clientLogLevel: 'info',
     headers: { 'Access-Control-Allow-Origin': '*' },
+    disableHostCheck: true,
     before(app, server) {
       const sane = require('sane')
       var watcher = sane(path.join(__dirname, config.watchDir), {glob: ['**/*']});
