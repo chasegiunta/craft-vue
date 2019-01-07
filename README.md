@@ -35,7 +35,6 @@ This boilerplate requires Vue CLI 3 be [installed globally on your machine](http
 # create & install project
 composer create-project chasegiunta/craft-vue PATH
 
-<<<<<<< HEAD
 # run Craft's setup & install
 ./craft setup
 
@@ -81,11 +80,3 @@ This boilerplate uses babel-preset-env for configuring babel. [You can read more
 
 ## Linting
 You can enable linting by adding the `@vue/cli-plugin-eslint` plugin through the GUI `vue ui`.
-=======
-#### Community Resources
-- [CraftQuest](https://craftquest.io/) – Unlimited access to Craft training (and more) from Mijingo.
-- [Envato Tuts+](https://webdesign.tutsplus.com/categories/craft-cms/courses) – Video courses.
-- [nystudio107 Blog](https://nystudio107.com/blog) – Articles about Craft and modern web development.
-- [Craft Link List](http://craftlinklist.com/) – Bimonthly newsletter about the Craft ecosystem.
-- [Craft CMS Stack Exchange](http://craftcms.stackexchange.com/) – Community-run Q&A for Craft developers.
->>>>>>> 96f9c1e3ff1e87e64c2189cd61b50eb3d8af353b
