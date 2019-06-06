@@ -23,16 +23,8 @@ module.exports = {
     clientLogLevel: "info",
     headers: { "Access-Control-Allow-Origin": "*" },
     disableHostCheck: true,
-    before(app, server) {
-      const sane = require("sane");
-      var watcher = sane(path.join(__dirname, config.watchDir), {
-        glob: ["**/*"]
-      });
-      watcher.on("change", function(filepath, root, stat) {
-        console.log("  File saved:", filepath);
-        server.sockWrite(server.sockets, "content-changed");
-      });
-    }
+    contentBase: path.join(__dirname, config.watchDir),
+    watchContentBase: true
   },
   configureWebpack: {
     plugins: [

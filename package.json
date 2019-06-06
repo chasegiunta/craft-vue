@@ -12,7 +12,6 @@
   },
   "devDependencies": {
     "@vue/cli-service": "^3.8.0",
-    "sane": "^4.1.0",
     "vue-template-compiler": "^2.6.0",
     "webpack-manifest-plugin": "^2.0.4"
   },
