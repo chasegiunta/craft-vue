@@ -1,5 +1,6 @@
 const path = require("path");
 const ManifestPlugin = require("webpack-manifest-plugin");
+production = process.env.NODE_ENV === "production";
 
 config = {
   protocol: "http",
@@ -29,7 +30,7 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new ManifestPlugin({
-        publicPath: "/dist/"
+        publicPath: production ? "/dist/" : "/"
       })
     ]
   },
