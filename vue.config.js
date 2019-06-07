@@ -35,13 +35,13 @@ module.exports = {
       new ManifestPlugin({
         fileName: modern ? "manifest.json" : "manifest-legacy.json",
         publicPath: production ? "/dist/" : "/"
+      }),
+      new FileManagerPlugin({
+        onEnd: {
+          // Delete unnecessary index.html file
+          delete: ["./web/dist/index.html"]
+        }
       })
     ]
-  },
-  // Disable building a useless index.html file
-  chainWebpack: config => {
-    config.plugins.delete("html");
-    config.plugins.delete("preload");
-    config.plugins.delete("prefetch");
   }
 };
