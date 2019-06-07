@@ -6,13 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ siteName }}</title>
 
-  {% if getenv('ENVIRONMENT') != 'dev' and getenv('ENVIRONMENT') != 'local' %}
-    <link rel="stylesheet" href="{{ rev('app.css') }}">
-  {% endif %}
+  {{ craft.twigpack.includeCssModule("app.css", true) }}
 </head>
 
 <body>
   <div id="app">
+    
     {% set info = {
       craftVersion: craft.app.getVersion(),
       environment: getenv('ENVIRONMENT')
@@ -23,12 +22,9 @@
     </hello-world>
   </div>
 
-  {% if getenv('ENVIRONMENT') == 'dev' or getenv('ENVIRONMENT') == 'local' %}
-    <script src="http://localhost:8080/app.js"></script>
-  {% else %}
-    <script src="{{ rev('chunk-vendors.js') }}"></script>
-    <script src="{{ rev('app.js') }}"></script>
-  {% endif %}
+  {{ craft.twigpack.includeSafariNomoduleFix() }}
+  {{ craft.twigpack.includeJsModule("app.js", true) }}
+  {{ craft.twigpack.includeJsModule("chunk-vendors.js", true) }}
 
 </body>
 </html>

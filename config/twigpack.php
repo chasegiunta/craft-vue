@@ -9,7 +9,7 @@ return [
     'errorEntry' => 'app.js',
     // Manifest file names
     'manifest' => [
-      'legacy' => 'manifest.json',
+      'legacy' => 'manifest-legacy.json',
       'modern' => 'manifest.json',
     ],
     // Public server config
@@ -39,5 +39,10 @@ return [
   'dev' => [
     // If `devMode` is on, use webpack-dev-server to all for HMR (hot module reloading)
     'useDevServer' => true,
+    'manifest' => [
+      // WDS only serving up one manifest file, so point to the right one
+      'legacy' => 'manifest-legacy.json',
+      'modern' => 'manifest-legacy.json',
+    ]
   ],
 ];

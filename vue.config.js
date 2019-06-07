@@ -1,5 +1,8 @@
 const path = require("path");
 const ManifestPlugin = require("webpack-manifest-plugin");
+const FileManagerPlugin = require("filemanager-webpack-plugin");
+
+modern = process.env.VUE_CLI_MODERN_MODE;
 production = process.env.NODE_ENV === "production";
 
 config = {
@@ -30,6 +33,7 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new ManifestPlugin({
+        fileName: modern ? "manifest.json" : "manifest-legacy.json",
         publicPath: production ? "/dist/" : "/"
       })
     ]
