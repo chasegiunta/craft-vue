@@ -58,7 +58,7 @@ You can also run your `dev` & `build` tasks from the GUI to get valuable build s
 
 If webpack's dev server (`yarn dev`) is not running, Twigpack will serve your assets from the build directory.
 
-For a detailed explanation on how things work, check out the [Vue CLI docs](https://cli.vuejs.org/).
+For a detailed explanation on how things work, check out the [Twigpack docs](https://github.com/nystudio107/craft-twigpack) & [Vue CLI docs](https://cli.vuejs.org/).
 
 ## Pre-Processors
 
