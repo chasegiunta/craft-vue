@@ -20,9 +20,9 @@ All the power of Vue CLI's scaffolding & single file components tailored for a C
   - Static assets compiled with version hashes for efficient long-term caching
   - Bundle size analytics
 
-### Fork It And Make Your Own
+## Fork It And Make Your Own
 
-You should fork this repo to create your own boilerplate. This scaffold makes no assumptions about pre-processors used or linting configurations.
+You should fork this repo to create your own opinionated boilerplate for your setup. This template makes no assumptions about pre-processors, template structure, or linting configurations.
 
 I've also created a [fork of this boilerplate](https://github.com/chasegiunta/craft-vue-tailwind) that integrates TailwindCSS & Purgecss.
 
