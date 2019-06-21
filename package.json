@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build --modern"
   },
   "dependencies": {
     "filemanager-webpack-plugin": "^2.0.5",
