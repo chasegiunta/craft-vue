@@ -3,7 +3,7 @@
 module.exports = {
   // https://cli.vuejs.org/config/#babel
   presets: [
-    "@vue/app"
+    ["@vue/app"
     // https://cli.vuejs.org/guide/browser-compatibility.html#polyfills
     // , {
     //   polyfills: [
@@ -11,6 +11,7 @@ module.exports = {
     //     'es6.symbol'
     //   ]
     // }
+    ]
   ]
   // https://babeljs.io/docs/en/options#sourcetype
   // , sourceType: "unambiguous",
