@@ -8,7 +8,7 @@
     <code>
       Craft Version: {{ info.craftVersion }} (passed in as prop)<br />
       Environment: {{ info.environment }} (passed in as prop)<br />
-      DB Name: <slot></slot> (passed in through slot)
+      DSN Settings: <slot></slot> (passed in through slot)
     </code>
   </div>
 </template>

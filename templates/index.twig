@@ -18,7 +18,7 @@
     } %}
     
     <hello-world :info="{{ info|json_encode }}">
-      {{ getenv('DB_DATABASE') }}
+      {{ getenv('DB_DSN') }}
     </hello-world>
   </div>
 
