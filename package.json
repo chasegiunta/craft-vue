@@ -12,10 +12,10 @@
     "vue": "^2.6.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-service": "^3.8.0",
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
     "vue-template-compiler": "^2.6.0",
-    "webpack-manifest-plugin": "^2.0.4"
+    "webpack-manifest-plugin": "^2.1.4"
   },
   "postcss": {
     "plugins": {
